@@ -1,0 +1,37 @@
+current directory: C:/Users/yyxxc/Desktop/CVWO_Winter_assignment/web-forum/vendor/bundle/ruby/3.2.0/gems/psych-5.1.2/ext/psych
+C:/Ruby32-x64/bin/ruby.exe extconf.rb
+checking for yaml.h... yes
+checking for yaml_get_version() in -lyaml... yes
+creating Makefile
+
+current directory: C:/Users/yyxxc/Desktop/CVWO_Winter_assignment/web-forum/vendor/bundle/ruby/3.2.0/gems/psych-5.1.2/ext/psych
+make DESTDIR\= sitearchdir\=./.gem.20231225-28412-fu3brd sitelibdir\=./.gem.20231225-28412-fu3brd clean
+cd libyaml && make clean
+bash.exe: warning: could not find /tmp, please create!
+/bin/sh: 第 1 行：cd: libyaml: No such file or directory
+make: [Makefile:287：clean-so] 错误 1 (已忽略）
+bash.exe: warning: could not find /tmp, please create!
+
+current directory: C:/Users/yyxxc/Desktop/CVWO_Winter_assignment/web-forum/vendor/bundle/ruby/3.2.0/gems/psych-5.1.2/ext/psych
+make DESTDIR\= sitearchdir\=./.gem.20231225-28412-fu3brd sitelibdir\=./.gem.20231225-28412-fu3brd
+generating psych-x64-mingw-ucrt.def
+bash.exe: warning: could not find /tmp, please create!
+compiling psych.c
+compiling psych_emitter.c
+compiling psych_parser.c
+compiling psych_to_ruby.c
+compiling psych_yaml_tree.c
+linking shared-object psych.so
+
+current directory: C:/Users/yyxxc/Desktop/CVWO_Winter_assignment/web-forum/vendor/bundle/ruby/3.2.0/gems/psych-5.1.2/ext/psych
+make DESTDIR\= sitearchdir\=./.gem.20231225-28412-fu3brd sitelibdir\=./.gem.20231225-28412-fu3brd install
+bash.exe: warning: could not find /tmp, please create!
+/usr/bin/install -c -m 0755 psych.so ./.gem.20231225-28412-fu3brd
+
+current directory: C:/Users/yyxxc/Desktop/CVWO_Winter_assignment/web-forum/vendor/bundle/ruby/3.2.0/gems/psych-5.1.2/ext/psych
+make DESTDIR\= sitearchdir\=./.gem.20231225-28412-fu3brd sitelibdir\=./.gem.20231225-28412-fu3brd clean
+cd libyaml && make clean
+bash.exe: warning: could not find /tmp, please create!
+/bin/sh: 第 1 行：cd: libyaml: No such file or directory
+make: [Makefile:287：clean-so] 错误 1 (已忽略）
+bash.exe: warning: could not find /tmp, please create!

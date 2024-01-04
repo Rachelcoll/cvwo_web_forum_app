@@ -1,0 +1,24 @@
+current directory: C:/Users/yyxxc/Desktop/CVWO_Winter_assignment/web-forum/vendor/bundle/ruby/3.2.0/gems/debug-1.9.1/ext/debug
+C:/Ruby32-x64/bin/ruby.exe extconf.rb
+creating Makefile
+
+current directory: C:/Users/yyxxc/Desktop/CVWO_Winter_assignment/web-forum/vendor/bundle/ruby/3.2.0/gems/debug-1.9.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20231225-28412-g4x8gt sitelibdir\=./.gem.20231225-28412-g4x8gt clean
+bash.exe: warning: could not find /tmp, please create!
+
+current directory: C:/Users/yyxxc/Desktop/CVWO_Winter_assignment/web-forum/vendor/bundle/ruby/3.2.0/gems/debug-1.9.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20231225-28412-g4x8gt sitelibdir\=./.gem.20231225-28412-g4x8gt
+generating debug-x64-mingw-ucrt.def
+bash.exe: warning: could not find /tmp, please create!
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: C:/Users/yyxxc/Desktop/CVWO_Winter_assignment/web-forum/vendor/bundle/ruby/3.2.0/gems/debug-1.9.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20231225-28412-g4x8gt sitelibdir\=./.gem.20231225-28412-g4x8gt install
+bash.exe: warning: could not find /tmp, please create!
+/usr/bin/install -c -m 0755 debug.so ./.gem.20231225-28412-g4x8gt/debug
+
+current directory: C:/Users/yyxxc/Desktop/CVWO_Winter_assignment/web-forum/vendor/bundle/ruby/3.2.0/gems/debug-1.9.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20231225-28412-g4x8gt sitelibdir\=./.gem.20231225-28412-g4x8gt clean
+bash.exe: warning: could not find /tmp, please create!
