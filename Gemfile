@@ -8,8 +8,8 @@ gem "rails", "~> 7.1.2"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
-# Use sqlite3 as the database for Active Record
-gem "pg"
+# Use pg as the database for Active Record
+gem "pg", "~> 1.1"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
@@ -47,12 +47,12 @@ gem "bootsnap", require: false
 # gem "image_processing", "~> 1.2"
 
 
-# group :development, :test do
+group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
-# end
+end
 
-# group :development do
+group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 
@@ -61,10 +61,10 @@ gem "bootsnap", require: false
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
-# end
+end
 
-# group :test do
+group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
-# end
+end
