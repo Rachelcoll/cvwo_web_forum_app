@@ -9,10 +9,24 @@ class ArticlesController < ApplicationController
         render json: articles
     end
 
+    def view_by_tag
+        tag = params[:tag]
+        if tag == "all"
+            render json: Article.all
+        else
+            tag_articles = Article.where(tag: tag)
+            render json: tag_articles
+        end
+    end
+
     def show
         @article = Article.find(params[:id])
+        @user = @article.user
         if @article
-            render json: {article: @article}
+            render json: {
+                article: @article,
+                user: @user
+            }
         else
             render json: {status: "no such article"}
         end

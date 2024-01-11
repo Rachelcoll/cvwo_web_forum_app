@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_01_04_062120) do
+ActiveRecord::Schema[7.1].define(version: 2024_01_10_134131) do
   create_table "articles", force: :cascade do |t|
     t.integer "user_id", null: false
     t.string "title"
@@ -19,6 +19,25 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_04_062120) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_articles_on_user_id"
+  end
+
+  create_table "comments", force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.integer "article_id", null: false
+    t.string "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["article_id"], name: "index_comments_on_article_id"
+    t.index ["user_id"], name: "index_comments_on_user_id"
+  end
+
+  create_table "games", force: :cascade do |t|
+    t.string "name"
+    t.string "release_date"
+    t.string "developers"
+    t.string "genre"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "posts", force: :cascade do |t|
@@ -31,6 +50,17 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_04_062120) do
     t.index ["creater_id"], name: "index_posts_on_creater_id"
   end
 
+  create_table "reviews", force: :cascade do |t|
+    t.integer "game_id", null: false
+    t.string "game_review"
+    t.integer "score"
+    t.integer "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["game_id"], name: "index_reviews_on_game_id"
+    t.index ["user_id"], name: "index_reviews_on_user_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email"
     t.string "password_digest"
@@ -39,5 +69,9 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_04_062120) do
   end
 
   add_foreign_key "articles", "users"
+  add_foreign_key "comments", "articles"
+  add_foreign_key "comments", "users"
   add_foreign_key "posts", "creaters"
+  add_foreign_key "reviews", "games"
+  add_foreign_key "reviews", "users"
 end

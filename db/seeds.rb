@@ -7,3 +7,11 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+require 'csv'
+csv_text_mobile = File.read(Rails.root.join('db', 'seeds', 'mobile-games.csv'))
+csv_mobile = CSV.parse(csv_text_mobile, headers: true)
+
+csv_mobile.each do |row|
+  Game.create(name: row['Game'], release_date: row['Initial release'], developers: row['Publisher(s)'], genre: row['Genre(s)'])
+end
