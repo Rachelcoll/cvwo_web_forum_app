@@ -201,7 +201,7 @@ GEM
       io-console (~> 0.5)
     rexml (3.2.6)
     ruby2_keywords (0.0.5)
-    rubyzip (2.3.2)
+    rubyzip (2.3.0)
     selenium-webdriver (4.16.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
@@ -255,6 +255,7 @@ DEPENDENCIES
   puma (>= 5.0)
   rack-cors
   rails (~> 7.1.2)
+  rubyzip
   selenium-webdriver
   sprockets-rails
   stimulus-rails
