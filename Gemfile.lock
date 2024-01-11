@@ -255,7 +255,6 @@ DEPENDENCIES
   puma (>= 5.0)
   rack-cors
   rails (~> 7.1.2)
-  rubyzip
   selenium-webdriver
   sprockets-rails
   stimulus-rails
