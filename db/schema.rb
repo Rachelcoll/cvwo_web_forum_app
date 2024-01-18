@@ -40,16 +40,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_10_134131) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "posts", force: :cascade do |t|
-    t.integer "creater_id", null: false
-    t.string "title"
-    t.string "tag"
-    t.string "content"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["creater_id"], name: "index_posts_on_creater_id"
-  end
-
   create_table "reviews", force: :cascade do |t|
     t.integer "game_id", null: false
     t.string "game_review"
@@ -71,7 +61,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_10_134131) do
   add_foreign_key "articles", "users"
   add_foreign_key "comments", "articles"
   add_foreign_key "comments", "users"
-  add_foreign_key "posts", "creaters"
   add_foreign_key "reviews", "games"
   add_foreign_key "reviews", "users"
 end

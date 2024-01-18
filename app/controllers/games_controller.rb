@@ -1,8 +1,20 @@
 class GamesController < ApplicationController
     include CurrentUserConcern
     def index
-        games = Game.all
+        games = Game.all.map do |game|
+          avg_score = game.reviews.average(:score)
+          game.attributes.merge(avg_score: avg_score)
+        end
         render json: games
+      end
+
+    def current_game
+        @game = Game.find(params[:id])
+        if @game
+            render json: @game
+        else 
+            render json: { status: 500 }
+        end
     end
 
     def avg_score

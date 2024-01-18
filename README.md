@@ -1,24 +1,28 @@
-# README
+### How to Run Rails Backend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. Make sure ruby and rails are all installed.
+use
 
-Things you may want to cover:
+## `ruby -v`
+## `rails -v`
 
-* Ruby version
+to check.
 
-* System dependencies
+2. Then clone this repository to local computer. In the directory, use
 
-* Configuration
+## `bundle install`
 
-* Database creation
+to install all dependencies.
 
-* Database initialization
+3. Create database and migrate schema using
 
-* How to run the test suite
+## `rails db:create`
+## `rails db:migrate`
 
-* Services (job queues, cache servers, search engines, etc.)
+4. Run this application on **http://localhost:3001**.
 
-* Deployment instructions
+## `rails s -p 3001`
 
-* ...
+5. If the page shows 
+> {status: "hello world!"}
+then the backend is successfully launched.

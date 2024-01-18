@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :games, only: [:index] do
     member do
       get "avg_score"
+      get "current_game"
     end
     resources :reviews, only: [:index, :create, :destroy]
   end
