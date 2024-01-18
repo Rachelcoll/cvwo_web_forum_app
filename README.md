@@ -3,25 +3,25 @@
 1. Make sure ruby and rails are all installed.
 use
 
-## `ruby -v`
-## `rails -v`
+`ruby -v`
+`rails -v`
 
 to check.
 
 2. Then clone this repository to local computer. In the directory, use
 
-## `bundle install`
+`bundle install`
 
 to install all dependencies.
 
 3. Create database and migrate schema using
 
-## `rails db:create`
-## `rails db:migrate`
+`rails db:create`
+`rails db:migrate`
 
-4. Run this application on **http://localhost:3001**.
+4. Run this application on **http://localhost:3001** using
 
-## `rails s -p 3001`
+`rails s -p 3001`
 
 5. If the page shows 
 > {status: "hello world!"}
